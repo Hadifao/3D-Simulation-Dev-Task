@@ -11,7 +11,7 @@ var scene = new THREE.Scene();
         var renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
-       
+    
         
 
 //CUBE GEO, COLOR LIST
@@ -66,15 +66,12 @@ var scene = new THREE.Scene();
         cubeB.position.x -= 0.01
         cubeA.position.x += 0.01
     //COLOR RGB USED WITH CONDITIONS BELOW
-        black = {r: 0, g: 0, b: 0};
-        red = {r: 1, g: 0, b: 0}
-        blue = {r: 0, g: 0, b: 1}
-        purple = {r: 0.5019607843137255, g: 0, b: 0.5019607843137255}
-        yellow = {r: 1, g: 1, b: 0}
-        green = {r: 0, g: 0.5019607843137255, b: 0}
-        list_neg_pos = [-0.01,0.01]
-        randomX = list_neg_pos[Math.floor(Math.random() * 2)]
-        randomY = list_neg_pos[Math.floor(Math.random() * 2)]
+    black = {r: 0, g: 0, b: 0};
+    red = {r: 1, g: 0, b: 0}
+    blue = {r: 0, g: 0, b: 1}
+    purple = {r: 0.5019607843137255, g: 0, b: 0.5019607843137255}
+    yellow = {r: 1, g: 1, b: 0}
+    green = {r: 0, g: 0.5019607843137255, b: 0}
     // COLLISION DETECTION
         if (cubeB.position.x < cubeA.position.x+1){
             //DELETING CUBES WITH DUPLICATE FACES
