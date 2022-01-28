@@ -103,8 +103,10 @@ var scene = new THREE.Scene();
             }   
             // GENERATE RANDOM TRAJECTORY WHEN COLLIDING WITH CUBE-B (PURPLE)
             else if(material[1].color.r == purple.r && material[1].color.g == purple.g && material[1].color.b == purple.b ){
-                cubeA.position.x += randomX
-                cubeA.position.y += randomY 
+                cubeA.position.x -= 0.01
+                cubeA.translateX(Math.random()*0.01)
+                cubeA.translateY(Math.random()*0.01)
+                cubeA.translateZ(Math.random()*0.01)
                 
             }  
 
